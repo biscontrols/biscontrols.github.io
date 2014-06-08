@@ -3,7 +3,46 @@ body {
     font-family: 'PT Sans', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #ffffff;
 }
+
+#partners-list {
+    position: relative;
+}
+
+#partners-list li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    top: 0;
+    display: inline-block;
+    height: 120px;
+    width: 200px;
+}
+
+#medcore {
+    background: url(img/logo-clients3.jpg) 0 0;
+}
+
+#fest {background: url(img/logo-clients3.jpg) -200px 0;
+}
+
+#honduras {
+    background: url(img/logo-clients3.jpg) -400px 0;
+}
+
+#lipetsk-adm {
+    background: url(img/logo-clients3.jpg) -200px -120px;
+}
+
+#tverskoy-univer {
+    background: url(img/logo-clients3.jpg) 0 -120px;
+}
+
+#lanit {
+    background: url(img/logo-clients3.jpg) -400px -120px;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Sans', sans-serif;
@@ -31,15 +70,16 @@ header nav ul {
     float: right;
     list-style: none;
     margin-left: 0;
-    margin-top: 0.3em;
     margin-bottom: 0;
+    vertical-align: middle;
 }
 
 .photo-background {
-    background-image: url(img/background/photo/rocket.jpg);
+    background-image: url(img/background/photo/rocket-light.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #3399cc;
 }
 
 .small-menu {
@@ -50,7 +90,7 @@ header nav ul {
     color: #666;
 }
 
-.small-menu-inactive {
+.small-menu-inactive, .small-menu a:hover {
     color: #3399cc;
 }
 
@@ -132,6 +172,7 @@ h5 {
 span h5 {
     color: #3399cc;
     font-size: 1.2em;
+    margin-top: 1em;
 }
 
 .logo a {
@@ -186,7 +227,7 @@ span h5 {
 }
 
 .cup {
-    background-image: url(img/cup5.png);
+    background-image: url(img/cup6.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -240,16 +281,8 @@ span h5 {
     height: 125px;
 }
 
-span h2 {
-    
-}
-
 span {
     text-align: center;    
-}
-
-span h5 {
-    margin-top: 1em;
 }
 
 .about-company {
@@ -272,16 +305,25 @@ span h5 {
 .project-button a {
     color: #fff;
     background-color: #d45252;
-    padding: 0.1em 0.4em 0.5em 0.4em;
+    padding: 0.3em 0.8em 0.5em 0.8em;
     box-shadow: 0.25em 0.25em 0 0 #ccc;
     vertical-align: bottom;
     position: relative;
+    border-radius: 5px;
+    font-family: 'PT Sans Caption';
+    font-weight: 500;
+    font-size: 1.1em;
 }
 
 .project-button a:active {
     box-shadow: 0 0 0 0;
     position: relative;
     margin: 0.25em auto auto 0.25em;
+}
+
+footer span ul {
+ margin: 0;
+ vertical-align: middle;
 }
 
 footer ul li {
@@ -293,7 +335,7 @@ footer ul li {
 footer ul li a {
     color: #ffffff;
     text-decoration: underline;
-    margin-left: -2em;
+/*    margin-left: -2em;*/
     position: relative;
     vertical-align: middle;
 }
@@ -347,6 +389,7 @@ li a img {
 li a img:hover {
     box-shadow: 0 0 0.6em #47a3d1;
 }
+
 
 $(document).ready(function() {
    $('div').click(function() {

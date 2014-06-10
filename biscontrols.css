@@ -48,6 +48,12 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'PT Sans', sans-serif;
 }
 
+span h3 {
+    font-family: 'PT Sans caption';
+    margin-top: -0.3em;
+    color: #cc3333;
+}
+
 h4 a {
     color: #cc3333;
     text-decoration: underline;
@@ -59,6 +65,10 @@ h4 a:hover {
 
 .color-white {
     color: #ffffff;
+}
+
+.color-red {
+    color: #cc3333;
 }
 
 header {
@@ -79,7 +89,7 @@ header nav ul {
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #3399cc;
+    background-color: #999999;
 }
 
 .small-menu {
@@ -110,17 +120,18 @@ nav {
     margin:-1px;
 }
 
-header nav ul li {
+header nav ul div {
     text-align: center;
     padding-left: 0.98em;
+    margin-top: -0.4em;
 }
 
-li a {
+li a, header nav div a {
     color: #666666;
     text-decoration: none;
 }
 
-li a:hover {
+li a:hover, header nav div a:hover {
     color: #3399cc;
     text-decoration: underline;
 }
@@ -160,9 +171,21 @@ span h2 {
     content: "– ";
 }
 
+.you-need-us p {
+    margin-bottom: 2em;
+}
+
+.you-need-us h4 {
+    margin-bottom: 0.5em;
+}
+
 h4 {
     color: #cc3333;
     margin-bottom: 1em;
+}
+
+h4 a, h4 a:hover {
+    color: #3399cc;
 }
 
 h5 {
@@ -173,6 +196,11 @@ span h5 {
     color: #3399cc;
     font-size: 1.2em;
     margin-top: 1em;
+}
+
+header img {
+    width: 380px;
+    margin-right: 20px;
 }
 
 .logo a {
@@ -210,7 +238,7 @@ span h5 {
 
 .bluebgr {
     background-color: #47a3d1;
-    background-image: url(img/pattern-7mib.png);
+/*    background-image: url(img/pattern-7mib.png);*/
     
 }
 
@@ -300,6 +328,10 @@ span {
     background-color: #999;
     width: 40%;
     height: 100px;
+}
+
+.project-button {
+    margin-bottom: 1em;
 }
 
 .project-button a {

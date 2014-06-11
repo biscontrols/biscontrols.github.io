@@ -1,10 +1,180 @@
 body {
     color: #666666;
     font-family: 'PT Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+h4 a {
+    color: #3399cc;
+    text-decoration: underline;
+}
+
+h4 a:hover {
+    color: #3399cc;
+    text-decoration: none;
+}
+
+h4 {
+    color: #cc3333;
+    margin-bottom: 1em;
+}
+
+h5 {
+    color: #cc3333;
+}
+
+.wow-text {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+/*___________________colors_______________________*/
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-red {
+    color: #cc3333;
+}
+
+.color-blue {
+    color: #3399cc;
+}
+
+.bluebgr {
+    background-color: #47a3d1;
+    background-image: url(img/pattern-ek6n.png);
+    color: #ffffff;
+}
+
+.bluebgr * {
+    color: #ffffff;
+}
+
+.greybgr {
+    background-color: #f3f3f3;
+}
+
+/* __________________header________________________ */
+
+
+header {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+header img {
+    width: 380px;
+    margin-right: 20px;
+}
+
+.logo-img-letters {
+    background-image: url(img/logo1.png);
+    height: 49px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.5em;
+    background-position: center;
+}
+
+header nav div {
+    float: right;
+    list-style: none;
+    margin: 0;
+    vertical-align: middle;
+}
+
+nav {
+    margin-top: 1em;
+}
+
+header .small-menu nav div {
+    margin: -0.5px;
+}
+
+.small-menu-inactive, .small-menu a:hover {
+    color: #3399cc;
+}
+
+.small-menu nav {
+    margin-top: 4em;
+}
+
+.small-menu nav div {
+    padding: 0.5em;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin: -1px;
+}
+
+li a, header nav div a {
+    color: #666666;
+    text-decoration: none;
+}
+
+li a:hover, header nav div a:hover {
+    color: #3399cc;
+    text-decoration: underline;
+}
+
+/* ____________________photo background_____________________ */
+
+.index-caption h2 {
+    vertical-align: middle;
+    line-height: 1.2em;
+    margin-top: 33px;
+}
+
+.index-caption h2.index-caption__mini {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.wrapper.page-caption {
+    padding-top: 2.5em;
+}
+
+.page-caption p:last-child {
+    margin-bottom: 0;
+}
+
+.page-caption h1, .page-caption h2, .page-caption h3, .page-caption h4 {
+    margin-top: 0;
+}
+
+.what-we-do {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-style: normal;
+    list-style-type: none;
+    margin-left: -1px;
+    margin-bottom: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.what-we-do li {
+    margin-bottom: 0.8em;
+    margin-left: 17px;
+}
+
+.what-we-do li:last-child {
+    margin-bottom: 0;
+}
+
+.what-we-do li:before {
+    content: "– ";
+    margin-left: -17px;
+}
+
+
+
+/* __________________our partners_______________ */
 
 #partners-list {
     position: relative;
@@ -44,131 +214,17 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'PT Sans', sans-serif;
-}
 
-span h3 {
+
+
+
+
+
+
+
+.describe-problem_phone {
     font-family: 'PT Sans caption';
     margin-top: -0.3em;
-    color: #cc3333;
-}
-
-h4 a {
-    color: #cc3333;
-    text-decoration: underline;
-}
-
-h4 a:hover {
-    text-decoration: none;
-}
-
-.color-white {
-    color: #ffffff;
-}
-
-.color-red {
-    color: #cc3333;
-}
-
-header {
-    margin-top: 1em;
-    margin-bottom: 1.5em;
-}
-
-header nav ul {
-    float: right;
-    list-style: none;
-    margin-left: 0;
-    margin-bottom: 0;
-    vertical-align: middle;
-}
-
-.photo-background {
-    background-image: url(img/background/photo/rocket-light.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #999999;
-}
-
-.small-menu {
-    text-align: center;
-}
-
-.small-menu a{
-    color: #666;
-}
-
-.small-menu-inactive, .small-menu a:hover {
-    color: #3399cc;
-}
-
-nav {
-    margin-top: 1em;
-}
-
-.small-menu nav {
-    margin-top: 4em;
-}
-
-.small-menu nav div {
-    padding: 0.5em;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    width: 100%;
-    margin:-1px;
-}
-
-header nav ul div {
-    text-align: center;
-    padding-left: 0.98em;
-    margin-top: -0.4em;
-}
-
-li a, header nav div a {
-    color: #666666;
-    text-decoration: none;
-}
-
-li a:hover, header nav div a:hover {
-    color: #3399cc;
-    text-decoration: underline;
-}
-
-h2 {
-    color: white;
-    vertical-align: middle;
-    display: block;
-    
-    text-align: right;
-    line-height: 1.2em;
-    margin-top: 5%;
-}
-
-span h2 {
-    text-align: left;
-}
-
-.what-we-do {
-    color: white;
-    font-size: 1.1em;
-    text-align: left;
-    line-height: 1.5em;
-    font-style: normal;
-    list-style-type: none;
-    margin-left: -0.5em;
-    position: relative;
-    display: block;
-}
-
-
-.what-we-do li {
-    margin-bottom: 0.8em;
-}
-
-.what-we-do li:before {
-    content: "– ";
 }
 
 .you-need-us p {
@@ -177,73 +233,6 @@ span h2 {
 
 .you-need-us h4 {
     margin-bottom: 0.5em;
-}
-
-h4 {
-    color: #cc3333;
-    margin-bottom: 1em;
-}
-
-h4 a, h4 a:hover {
-    color: #3399cc;
-}
-
-h5 {
-    color: #cc3333;
-}
-
-span h5 {
-    color: #3399cc;
-    font-size: 1.2em;
-    margin-top: 1em;
-}
-
-header img {
-    width: 380px;
-    margin-right: 20px;
-}
-
-.logo a {
-    font-family: PT Sans Caption;
-    color: #666666;
-    font-size: 35px;
-    display: inline-block;
-}
-
-.logo {
-    margin-top: 1em;
-    letter-spacing: -0.08em;
-    margin-left: 4.6em;
-    margin-right: -4.6em;
-}
-
-.logo-img {
-    background-image: url(img/logo.png);
-    height: 51px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    margin-top: 0.5em;
-    margin-left: 1em;
-}
-
-.logo-img-letters {
-    background-image: url(img/logo1.png);
-    height: 49px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0.5em;
-    background-position: center;
-}
-
-.bluebgr {
-    background-color: #47a3d1;
-/*    background-image: url(img/pattern-7mib.png);*/
-    
-}
-
-.greybgr {
-    background-color: #f3f3f3;
 }
 
 .wrapper {
@@ -265,6 +254,7 @@ header img {
 .bgr-img {
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 1em;
 }
 
 .illustration {
@@ -289,6 +279,11 @@ header img {
     padding-right: 14.5%;
 }
 
+
+.wrapper.what-we-do-img-list {
+    padding-bottom: 1.5em;
+}
+
 .img-round1 {
     background-image: url(img/round1.png);
     height: 125px;
@@ -309,9 +304,6 @@ header img {
     height: 125px;
 }
 
-span {
-    text-align: center;    
-}
 
 .about-company {
     padding-right: 8.33333%;
@@ -353,9 +345,8 @@ span {
     margin: 0.25em auto auto 0.25em;
 }
 
-footer span ul {
- margin: 0;
- vertical-align: middle;
+footer ul {
+    margin: 0;
 }
 
 footer ul li {
@@ -377,14 +368,6 @@ footer ul li a:hover {
     text-decoration: none;
 }
 
-footer span {
-    text-align: right;
-}
-
-.small-adress span {    
-    text-align: center;
-    font-size: 0.5em;
-}
 
 footer nav {
     margin-bottom: 2em;

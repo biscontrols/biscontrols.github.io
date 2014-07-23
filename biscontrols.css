@@ -72,15 +72,6 @@ header img {
     margin-right: 20px;
 }
 
-.logo-img-letters {
-    background-image: url(img/logo1.png);
-    height: 49px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0.5em;
-    background-position: center;
-}
-
 header nav div {
     float: right;
     list-style: none;

@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body {
+            background: white;
+            text-align: center;
+            padding: 20px;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            font-style: italic;
+            color: #999;
+        }
+
+        a {
+            color: #99f;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+
+        h2 {
+            font-size: 12px;
+        }
+
+        #word {
+            font-size: 36px;
+            color: black;
+        }
+
+        button {
+            font-size: 24px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Enterprisify your Java Class Names!</h1>
+
+    <p id="word"></p>
+
+    <button id="enterprise">Enterprisify!</button>
+    <button id="again">Again</button>
+
+    <br /><br /><br />
+
+    <script>
+        var words = [
+                "Factory", "Bean", "Wrapper", 
+                "Configuration", "Exception", "Error",
+                "Identifier", "Attribute", "Container",
+                "Order", "Request", "Adapter",
+                "Proxy",
+                
+                "State", "Strategy", "Template", 
+                "Resolver",
+                "Event", "Helper", "Utils", "Helper", "Utils", "Helper", "Utils",
+               "Importer",
+                "Context",
+                "Connection", "Service", "Repository",
+                "Dispatcher", "Client", "Server",
+                "Message", "Map", "List", "Collection", "Queue", "Manager",
+                "Response",
+                "Schema", "Mapper",
+                
+                "Hit", "Hit", "Hit", "Hit", "City", "MacroRegion", "Password", "Anketa", "Login",
+                "Bonus", "Wishlist", "Store", "Basket", "Balance",
+                "Brand", "Product", "Sku",
+                "Rests", "New", "New", "New",
+                "Esm", "ClubPro", "Elastic", "Search",
+                "Spring"
+            ],
+            inWords = [
+                "Composite", "Invalid", "Supported", "Abstract",
+                "Transformer", "Common", "Autowire", "Aware",
+                "Aspect",
+                "Stateless", "Session",
+              
+                "Xml",
+                "Generic", "Interface", "Advisable", "Observable", "Identifiable",
+                "Iterable", "Distributed", "Notification", "Failure", "Type",
+                "Http", "Jdbc"
+
+
+            ];
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+
+        function rand(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function generate(min, max) {
+            var allWords = words.concat( inWords ),
+                word = '';
+
+            for (var i = 0, l = rand(min, max) - 1; i < l; i++) {
+                do {
+                    var w = allWords[ rand(0, allWords.length - 1) ];
+                } while (word.indexOf(w) !== -1);
+                word += w;
+            }
+
+            word += words[ rand(0, words.length - 1) ];
+
+            return word;
+        }
+
+        $("again").onclick = function() {
+            $("word").innerHTML = generate(2, 3);
+            $("enterprise").innerHTML = "Enterprisify!";
+        }
+
+        $("enterprise").onclick = function() {
+            var word = $("word").innerHTML;
+            $("word").innerHTML = generate(1, 1) + word;
+            $("enterprise").innerHTML = "Enterprisify even more!";
+        }
+
+        $("word").innerHTML = generate(2, 3);
+    </script>
+
+</body>
+</html>
